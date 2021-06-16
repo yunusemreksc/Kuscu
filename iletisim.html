@@ -12,40 +12,69 @@
     <link rel="shortcut icon" href="img/icon.png"/>
 </head>
 <body>
+    <div class="arama-motoru">
+        <input type="text" class="arama-tasarim">
+        <input type="submit" value="Ara" class="buton-tasarim">
+    </div>
     <div id="header">
-        <a href="/index.html" title="Anasayfa">
+        <a href="index.html" title="Anasayfa">
             <img src="img/banner.png" alt="logo" class="websitesilogo" />
         </a>
 
         <ul class="menu">
 
             <li>
-                <a href="/index.html">Anasayfa</a>
+                <a href="index.html">Anasayfa</a>
             </li>
             <li>
-                <a href="/hakkimda.html">Hakkımda</a>
+                <a href="hakkimda.html">Hakkımda</a>
             </li>
             <li>
-                <a href="/iletisim.html">İletişim</a>
+                <a href="iletisim.html" class="secili">İletişim</a>
             </li>
             <li>
-                <a href="/foto-galeri.html">Fotoğraf Galerisi</a>
+                <a href="foto-galeri.html">Fotoğraf Galerisi</a>
             </li>
         </ul>
     </div>
     <div id="content">
-        <h1>Yunus Emre Kuşçu</h1>
+        <h1>İLETİŞİM</h1>
         <div class="sayfabanner">
-            <img src="img/banner-anasayfa.png" />
+            <img src="img/iletisim.jpg">
         </div>
+        <h2>İletişim Bilgileri</h2>
         <div class="yazialani">
-            <p>Bu blog sayfasını "İnternet Tabanlı Programla" dersinden aldığım ödev için kurdum.
-                Hakkımda kısmından hangi üniversitede öğrenci olduğum,
-                hangi bölümü okuduğum, kaçıncı sınıf olduğum gibi bilgilere ulaşabilir
-                iletişim kısmından iletişim bilgilerime ulaşabilirsiniz.
-                Eğer vaktiniz varsa Fotoğraf Galerisine göz atmanızı öneririm güzel fotoğraflar var.</p>
+            <p><b>Adres:</b>Bandırma 17 Eylül</p>
+            <p><b>Telefon:</b>0552 325 81 08</p>
+            <P><b>Mail:</b>yunuskuscu1735@gmail.com</P>
         </div>
+        <h2>İletişim Formu</h2>
+        <div class="form">
+            <form class="formgonder" name="formgonder" id="formgonder" action="#" method="post">
+                <label for="ad_soyad">Ad, Soyad:</label>
+                <input type="text" placeholder="Ad, Soyad" name="ad_soyad"/>
+                <br>
+                <br>
+                <label for=e_posta>E-Posta:</label>
+                <input type="text" placeholder="E-posta" name="e_posta"/>
+                <br>
+                <br>
+                <label for="telefon">Telefon:</label>
+                <input type="text" placeholder="Telefon" name="telefon"/>
+                <br>
+                <br>
+                <label for="konu">Konu:</label>
+                <input type="text" placeholder="Konu" name="konu"/>
+                <br>
+                <br>
+                <label for="mesaj">Mesajınız:</label>
+                <textarea name="mesaj" placeholder="mesajınız"></textarea>
+                <br>
+                <br>
+                <input type="submit" name="gonder" value="Mesajı Gönder"/>
 
+            </form>
+        </div>
         <div style="clear:both;"></div>
 
     </div>
